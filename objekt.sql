@@ -23,7 +23,8 @@ select
     fastighet_byggnad.Nr as källfelts_fastighet_byggnad_nr,
     fastighet_byggnad.Namn as källfelts_fastighet_byggnad_namn,
     ObjektFrom::date as ObjektFrom,
-    ObjektTom::date as ObjektTom
+    ObjektTom::date as ObjektTom,
+    2 as test2
 from
     Objekt
 left join Objektstyper on Objekt.ExtObjektstypId = Objektstyper.ExtObjektstypId
